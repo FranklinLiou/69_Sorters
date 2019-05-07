@@ -28,23 +28,4 @@ public class SelectionSorter extends Sorter {
         }
         return index;
     }
-
-    // private int indexOf( Integer findMe) {
-    //     int low = 0;
-    //     int hi  = elements.size() -1;  // inclusive
-
-    //     while( low <= hi){
-    //         int pageToCheck = (low + hi) / 2;
-    //         String comparison =
-    //           findMe.compareTo( elements.get( pageToCheck));
-    //         if( comparison == 0) return pageToCheck;
-    //         else
-    //             if( comparison < 0)
-    //                 // findMe's spot precedes pageToCheck
-    //                 hi = pageToCheck -1;
-    //             // findMe's spot follows pageToCheck
-    //             else low = pageToCheck +1;
-    //     }
-    //     return -3; // value differs from skeleton, just FYI
-    // }
 }
