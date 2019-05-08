@@ -17,6 +17,12 @@ public class SelectionSorter extends Sorter {
         elements = unordered;
     }
 
+    // pre-condition: given a list and a starting point from which
+    // the list is unordered
+    // synopsis: selects the smallest object in the list from the
+    // list and swaps it with the first element
+    // post-condition: starting point should be moved further up the
+    // list
     private int champIndex( ArrayList<String> unordered, int startAt) {
         int index = startAt;
         String champ = elements.get(index);

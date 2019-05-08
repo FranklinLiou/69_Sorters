@@ -25,6 +25,12 @@ public class InsertionSorter extends Sorter {
       }
     }
 
+    // pre-condition: there is a list with a sorted section and an
+    // unsorted section.
+    // synopsis: take the first element of the unsorted section and
+    // compare it to the elements in the sorted section from back
+    // to front until it is sorted.
+    // post-condition: 
     public void insert1( int alreadyInserted) {
   		String valueToInsert = elements.remove(alreadyInserted);
   		if (valueToInsert.compareTo(elements.get(0)) < 0) {
